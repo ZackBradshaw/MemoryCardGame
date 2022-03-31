@@ -1,0 +1,52 @@
+.card {
+  /* position: relative; */
+  width: 200px;
+  height: 200px;
+}
+
+.flipped {
+  width: 200px;
+  height: 200px;
+}
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: contain;
+  border: 2px solid #fff;
+  transition: all ease-in 0.2s;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: contain;
+  border: 2px solid #fff;
+  transition-delay: 0.2s;
+}
+
+.front {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  border: 2px solid #fff;
+}
+
+.back {
+  width: 200px;
+  height: 200px;
+}
+/* back of card - cover */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
