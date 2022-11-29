@@ -33,5 +33,5 @@ Your app is ready to be deployed!
 - CSS
 - React
 
-##Documentation
+## Documentation
 - [React Docs](https://beta.reactjs.org/)
